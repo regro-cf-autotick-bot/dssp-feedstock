@@ -1,4 +1,4 @@
-{% set version = "4.4.11" %}
+{% set version = "4.5.0" %}
 
 package:
   name: dssp
@@ -6,20 +6,13 @@ package:
 
 source:
   url: https://github.com/PDB-REDO/dssp/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 49dd6560358ba65fb971e158f78a54557ab6da1c49e502704b3bb9518e17acce
+  sha256: d8cb1b3b173cb176f19b67459ad37fee203fb942951d2284dd4e8130a76f471d
 
 build:
   number: 0
   script:
     - >
-      cmake -S . -B build
-      -DCMAKE_BUILD_TYPE=Release
-      -DCMAKE_INSTALL_PREFIX={{ PREFIX }}
-      -DCMAKE_FIND_FRAMEWORK=NEVER
-      -DCMAKE_FIND_APPBUNDLE=NEVER
-      -DCMAKE_CXX_COMPILER=${CXX}
-      -DCMAKE_CXX_FLAGS="-D_LIBCPP_DISABLE_AVAILABILITY"  # [osx]
-      ${CMAKE_ARGS}
+      cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX={{ PREFIX }} -DCMAKE_FIND_FRAMEWORK=NEVER -DCMAKE_FIND_APPBUNDLE=NEVER -DCMAKE_CXX_COMPILER=${CXX} -DCMAKE_CXX_FLAGS="-D_LIBCPP_DISABLE_AVAILABILITY"  # [osx] ${CMAKE_ARGS}
     - cmake --build build --config Release
     - cmake --install build
 
