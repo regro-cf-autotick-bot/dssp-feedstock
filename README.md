@@ -204,5 +204,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@mhekkel](https://github.com/mhekkel/)
 * [@padix-key](https://github.com/padix-key/)
 
