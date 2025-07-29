@@ -9,7 +9,7 @@ c_stdlib:
 c_stdlib_version:
 - '10.15'
 channel_sources:
-- conda-forge,bioconda
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:

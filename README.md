@@ -13,8 +13,11 @@ Development: https://github.com/PDB-REDO/dssp
 
 Documentation: https://github.com/PDB-REDO/dssp/blob/trunk/doc/mkdssp.md
 
-DSSP (Define Secondary Structure of Proteins) is a program that assigns secondary structure to proteins based on their 3D structure.
-It is widely used in structural biology and bioinformatics for analyzing protein structures.
+DSSP (Define Secondary Structure of Proteins) is a program that assigns
+secondary structure to proteins based on their 3D structure.
+
+It is widely used in structural biology and bioinformatics for analyzing protein
+structures.
 
 Current build status
 ====================
@@ -373,6 +376,5 @@ Feedstock Maintainers
 =====================
 
 * [@eunos-1128](https://github.com/eunos-1128/)
-* [@mhekkel](https://github.com/mhekkel/)
 * [@padix-key](https://github.com/padix-key/)
 
